@@ -61,8 +61,6 @@ const Header = () => {
                         </li>
                         <li><a href="">Shoes</a></li>
                         <li><a href="">Online Shop</a></li>
-                        <li><a href="">NB with IU</a></li>
-
                     </ul>
                 </div>
             </div>

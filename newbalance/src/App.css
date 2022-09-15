@@ -5,28 +5,52 @@
   justify-content: space-between;
 }
 
+.csc h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0 0 50px 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 header .header_top {
-  line-height: 25px;
+  height: 25px;
   font-size: 12px;
   background: #cf0a2c;
   color: #fff;
 }
 
+header .header_top a {
+  margin: 4.5px 0 0 0;
+}
+
 header .header_top ul {
   display: flex;
   gap: 30px;
+  line-height: 25px;
 }
 
 header .header_main {
-  line-height: 50px;
+  height: 50px;
   font-size: 20px;
+  background: #fff;
   border-bottom: 1px solid #cf0a2c;
 }
 
+header .header_main a {
+  margin: 10.5px 0 0 0;
+}
 
 header .header_main ul {
   display: flex;
   gap: 50px;
+  line-height: 50px;
 }
 
 header .header_main ul li {
@@ -61,6 +85,7 @@ header .header_main ul li ul {
   top: 50px;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
+  background: #fff;
   border: 1px solid #cf0a2c;
   opacity: 0;
   visibility: hidden;
@@ -90,4 +115,211 @@ header .header_main ul li ul li~li {
 
 header .header_main ul li ul li::after {
   display: none;
+}
+
+.MainVisual {
+  position: relative;
+}
+
+.MainVisual figure {
+  position: relative;
+  height: calc(100vh - 200px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.MainVisual .itm01 {
+  background-image: url('../public/img/main_visual01.jpg');
+}
+
+.MainVisual .itm02 {
+  background-image: url('../public/img/main_visual02.jpg');
+}
+
+.MainVisual .itm03 {
+  background-image: url('../public/img/main_visual03.jpg');
+}
+
+.MainVisual .slideTab {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MainVisual .slideTab li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #cf0a2c;
+  margin: 0 10px;
+}
+
+.MainVisual .slideTab.on li {
+  background: #cf0a2c;
+}
+
+.Shop {
+  padding: 100px 0;
+}
+
+.Shop .container {
+  display: block;
+}
+
+.Shop h2::after {
+  content: "";
+  display: block;
+  top: 100%;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background: #ddd;
+}
+
+.Shop .Shop_item {
+  display: flex;
+  gap: 30px;
+}
+
+.Shop .Shop_item figure img {
+  width: 100%;
+  filter: grayscale(1);
+  transition: 0.5s;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+}
+
+.Shop .Shop_item figure img:hover {
+  filter: grayscale(0);
+}
+
+.Shop .Shop_item figure p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.Shop .Shop_item figure:hover p {
+  color: #cf0a2c;
+}
+
+.Nbnow {
+  position: relative;
+  padding: 100px 0;
+}
+
+.Nbnow .container {
+  display: block;
+}
+
+.Nbnow .container h2::after {
+  content: "";
+  display: block;
+  top: 100%;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background: #ddd;
+}
+
+.Nbnow .Nbnow_item {
+  display: flex;
+  gap: 30px;
+}
+
+.Nbnow .Nbnow_item figure {
+  position: relative;
+}
+
+.Nbnow .Nbnow_item figure img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.Nbnow .Nbnow_item figure .box {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: #fff;
+  line-height: 1.414;
+}
+
+.Nbnow .Nbnow_item figure .box h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 0 0;
+}
+
+.Nbnow .Nbnow_item figure .box h2::after {
+  display: none;
+}
+
+.Nbnow .Nbnow_item figure .box p {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.Nbnow .Nbnow_item figure .box strong {
+  display: inline-block;
+  padding: 5px 15px 2px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #fff;
+  color: #cf0a2c;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.Nbnow .Nbnow_item figure .box strong:hover {
+  background: #cf0a2c;
+  color: #fff;
+}
+
+.Wegotnow {
+  padding: 100px 0;
+}
+
+.Wegotnow .Endadd figure {
+  margin: 0 0 50px 0;
+}
+
+.Wegotnow .Endadd figure img {
+  width: 100%;
+}
+
+.Wegotnow .Endadd a {
+  display: inline-block;
+}
+
+.Footer {
+  padding: 50px 0;
+  background: #333;
+  color: #fff;
+}
+
+.Footer .nav_footer {
+  display: flex;
+  gap: 70px;
+}
+
+.Footer .nav_footer>ul {
+  display: flex;
+  gap: 70px;
+  line-height: 1.414;
+}
+
+.Footer .nav_footer .sns {
+  font-size: 25px;
+}
+
+.Footer .nav_footer .info_footer>ul {
+  line-height: 1.1;
+  margin: 0 0 10px 0;
 }
