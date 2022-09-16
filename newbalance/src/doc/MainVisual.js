@@ -13,7 +13,7 @@ const MainVisual = () => {
     useEffect(() => {
         setIDX(0)
     }, [])
-    const mainSlide = useRef();
+    const mainSlide = useRef(null);
     const setting = {
         arrows: false,
         afterChange: index => setIDX(index),
@@ -24,7 +24,7 @@ const MainVisual = () => {
 
     return (
         <section className='MainVisual'>
-            <Slider {...setting}>
+            <Slider {...setting} ref={mainSlide}>
                 {
                     SLIDE.map((slide, idx) => {
                         return (
@@ -37,11 +37,15 @@ const MainVisual = () => {
                 {
                     SLIDE.map((dots, idx) => {
                         return (
-                            <li key={dots.id} className={idx === IDX ? 'on' : ''} onClick={() => console.log(mainSlide)}>{dots.title}</li>
+                            <li key={dots.id} className={idx === IDX ? 'on' : ''} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.title}</li>
                         )
                     })
                 }
             </ul>
+            <div className="slideArrows">
+                <button onClick={() => mainSlide.current.slickPrev()}><i className='xi-angle-left'></i></button>
+                <button onClick={() => mainSlide.current.slickNext()}><i className='xi-angle-right'></i></button>
+            </div>
         </section>
     )
 }
