@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/Newbalance_React/static/css/main.073c9b0a.css",
-    "main.js": "/Newbalance_React/static/js/main.b44af3b2.js",
-    "static/js/787.3d405ae0.chunk.js": "/Newbalance_React/static/js/787.3d405ae0.chunk.js",
-    "static/media/logo.svg": "/Newbalance_React/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/Newbalance_React/static/css/main.c17c32fd.css",
+    "main.js": "/Newbalance_React/static/js/main.9b66ca75.js",
+    "static/media/main_visual03.jpg": "/Newbalance_React/static/media/main_visual03.ad46a34519e088abc3b7.jpg",
+    "static/media/main_visual01.jpg": "/Newbalance_React/static/media/main_visual01.51fd6ca216c67390f08a.jpg",
+    "static/media/main_visual02.jpg": "/Newbalance_React/static/media/main_visual02.ddab761d92b42687d5f3.jpg",
+    "static/media/long_shirt03.jpg": "/Newbalance_React/static/media/long_shirt03.c674e2d15d8bb6f13b7c.jpg",
+    "static/media/long_shirt04.jpg": "/Newbalance_React/static/media/long_shirt04.2e7ee0c0024835c755dd.jpg",
+    "static/media/long_shirt01.jpg": "/Newbalance_React/static/media/long_shirt01.fe40e3023e5f9f804262.jpg",
+    "static/media/long_shirt02.jpg": "/Newbalance_React/static/media/long_shirt02.e15df2db9f5e8b2a165f.jpg",
+    "static/media/t-shirt02.jpg": "/Newbalance_React/static/media/t-shirt02.5d704f788f0327ce7de1.jpg",
+    "static/media/t-shirt03.jpg": "/Newbalance_React/static/media/t-shirt03.b8a3bed36370e01f5c98.jpg",
     "index.html": "/Newbalance_React/index.html",
-    "main.073c9b0a.css.map": "/Newbalance_React/static/css/main.073c9b0a.css.map",
-    "main.b44af3b2.js.map": "/Newbalance_React/static/js/main.b44af3b2.js.map",
-    "787.3d405ae0.chunk.js.map": "/Newbalance_React/static/js/787.3d405ae0.chunk.js.map"
+    "main.c17c32fd.css.map": "/Newbalance_React/static/css/main.c17c32fd.css.map",
+    "main.9b66ca75.js.map": "/Newbalance_React/static/js/main.9b66ca75.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b44af3b2.js"
+    "static/css/main.c17c32fd.css",
+    "static/js/main.9b66ca75.js"
   ]
 }
